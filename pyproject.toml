@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "awesome-scripts"
+version = "0.1.0"
+description = ""
+authors = ["atompi <atompi@foxmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.black]
+line-length = 128
+
+[tool.ruff]
+line-length = 128
+select = ["E", "W", "F"]
+ignore = ["F401"]
+respect-gitignore = true
+ignore-init-module-imports = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
